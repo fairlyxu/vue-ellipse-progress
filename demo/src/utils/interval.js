@@ -5,7 +5,7 @@ class Interval {
   addTask(task, time = 1000) {
     this.tasks.push({ task, time });
   }
-  run() {
+  run(that) {
     if (this.tasks.length < 1) {
       return;
     }
