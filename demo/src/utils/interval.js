@@ -16,6 +16,11 @@ class Interval {
       task.task();
       task.interval = setInterval(() => {
         task.task();
+        task.task();
+          if(++x ===20){
+            clearInterval(task.interval);
+            that.activate = false
+          }
       }, task.time);
     }
   }
